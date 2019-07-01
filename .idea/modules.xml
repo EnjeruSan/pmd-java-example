@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/pmd-java-custom/pmd-java-custom.iml" filepath="$PROJECT_DIR$/pmd-java-custom/pmd-java-custom.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmd-java-dist/pmd-java-dist.iml" filepath="$PROJECT_DIR$/pmd-java-dist/pmd-java-dist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pmd-java-example.iml" filepath="$PROJECT_DIR$/pmd-java-example.iml" />
+    </modules>
+  </component>
+</project>

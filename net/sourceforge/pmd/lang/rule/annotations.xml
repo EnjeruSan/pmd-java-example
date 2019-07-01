@@ -1,0 +1,5 @@
+<root>
+    <item name='net.sourceforge.pmd.lang.rule.XPathRule'>
+        <annotation name='java.lang.Deprecated'/>
+    </item>
+</root>

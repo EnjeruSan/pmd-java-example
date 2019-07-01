@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ruleset name="My SOLID Rule"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+
+    <description>
+        Rule set which contains rules for SOLID analysis
+    </description>
+
+
+    <rule name="ParameterNumberRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.ParameterNumberRule"
+          message="Parameters  {0}.">
+        <description>
+            ParameterNumberRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
+
+    <rule name="ClassLengthRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.ClassLengthRule"
+          message="Class Length is {0}.">
+        <description>
+            ClassLengthRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="ImportNumberRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.ImportNumberRule"
+          message="Imports {0}.">
+        <description>
+            ImportNumberRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
+
+    <rule name="MethodLengthRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.MethodLengthRule"
+          message="Method Length is {0}.">
+        <description>
+            MethodLengthRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="MethodCountRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.MethodCountRule"
+          message="Method count is {0}.">
+        <description>
+            MethodLengthRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
+</ruleset>
