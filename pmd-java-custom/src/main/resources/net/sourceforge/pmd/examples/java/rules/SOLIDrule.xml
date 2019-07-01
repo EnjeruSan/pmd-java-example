@@ -9,17 +9,20 @@
         Rule set which contains rules for SOLID analysis
     </description>
 
-
-    <rule name="ParameterNumberRule"
+    <!--    For normalization    -->
+    <rule name="MethodCountRule"
           language="java"
-          class="net.sourceforge.pmd.examples.java.rules.ParameterNumberRule"
-          message="Parameters  {0}.">
+          class="net.sourceforge.pmd.examples.java.rules.MethodCountRule"
+          message="Method count is {0}.">
         <description>
-            ParameterNumberRule
+            MethodLengthRule
         </description>
         <priority>1</priority>
     </rule>
 
+    <!--    SOLID    -->
+
+    <!--    SRP    -->
 
     <rule name="ClassLengthRule"
           language="java"
@@ -27,6 +30,26 @@
           message="Class Length is {0}.">
         <description>
             ClassLengthRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="FieldNumberRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.FieldNumberRule"
+          message="FieldNumber is {0}.">
+        <description>
+            FieldNumberRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="MethodLengthRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.MethodLengthRule"
+          message="Method Length is {0}.">
+        <description>
+            MethodLengthRule
         </description>
         <priority>1</priority>
     </rule>
@@ -41,23 +64,110 @@
         <priority>1</priority>
     </rule>
 
-
-    <rule name="MethodLengthRule"
+    <rule name="ParameterNumberRule"
           language="java"
-          class="net.sourceforge.pmd.examples.java.rules.MethodLengthRule"
-          message="Method Length is {0}.">
+          class="net.sourceforge.pmd.examples.java.rules.ParameterNumberRule"
+          message="Parameters  {0}.">
         <description>
-            MethodLengthRule
+            ParameterNumberRule
         </description>
         <priority>1</priority>
     </rule>
 
-    <rule name="MethodCountRule"
+    <!--    OCP    -->
+
+    <rule name="InterfaceInsteadClassRule"
           language="java"
-          class="net.sourceforge.pmd.examples.java.rules.MethodCountRule"
-          message="Method count is {0}.">
+          class="net.sourceforge.pmd.examples.java.rules.InterfaceInsteadClassRule"
+          message="Class can be replaced with Interface  {0}.">
         <description>
-            MethodLengthRule
+            Если родительский класс можно заменить интерфейсом, возвращает 1, иначе 0;
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="IfNumberRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.IfNumberRule"
+          message="IfElse number is {0}.">
+        <description>
+            Количество if конструкций if-else
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <!--    LSP    -->
+
+    <rule name="InstanceOfNumberRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.InstanceOfNumberRule"
+          message="InstanceOf is {0}.">
+        <description>
+            Выдает количество вызовов InstanceOf
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="EmptyMethodRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.EmptyMethodRule"
+          message="Is this method empty {0}.">
+        <description>
+            Выдает количество вызовов InstanceOf
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="UnexpectedExceptionRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.UnexpectedExceptionRule"
+          message="UnexpectedException number is {0}.">
+        <description>
+            Выдает 1, если класс содержит Exception, которого нет в родительском
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <!--    ISP    -->
+
+    <rule name="JustReturnMethodRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.JustReturnMethodRule"
+          message="JustReturn is {0}.">
+        <description>
+            JustReturnMethodRule возвращает 1, если в методе только return, 0 - если всё хорошо
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="MethodsClusterNumberRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.MethodsClusterNumberRule"
+          message="JustReturn is {0}.">
+        <description>
+            Возвращает количество кластеров, на которые возможно разделить используемые методы
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <!--    DIP    -->
+
+    <rule name="ObjectInsideObjectRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.ObjectInsideObjectRule"
+          message="Problem is {0}.">
+        <description>
+            Выдает количество "плохих" объявлений переменных
+        </description>
+        <priority>1</priority>
+    </rule>
+
+    <rule name="DependencyNumberRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.DependencyNumberRule"
+          message="Dependency number is {0}.">
+        <description>
+            Выдает количество "плохих" объявлений переменных
         </description>
         <priority>1</priority>
     </rule>

@@ -12,7 +12,6 @@ public class MethodCountRule extends ExcessiveNodeCountRule {
         setProperty(MINIMUM_DESCRIPTOR, 1d);
     }
 
-
     @Override
     public Object visit(ASTMethodDeclaration node, Object data) {
         return NumericConstants.ONE;
