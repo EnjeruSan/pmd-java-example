@@ -10,10 +10,20 @@
     </description>
 
     <!--    For normalization    -->
+    <rule name="MyRule"
+          language="java"
+          class="net.sourceforge.pmd.examples.java.rules.MyRule"
+          message="{0}">
+        <description>
+            MethodLengthRule
+        </description>
+        <priority>1</priority>
+    </rule>
+
     <rule name="MethodCountRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.MethodCountRule"
-          message="Method count is {0}.">
+          message="{0}">
         <description>
             MethodLengthRule
         </description>
@@ -27,7 +37,7 @@
     <rule name="ClassLengthRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.ClassLengthRule"
-          message="Class Length is {0}.">
+          message="{0}">
         <description>
             ClassLengthRule
         </description>
@@ -37,7 +47,7 @@
     <rule name="FieldNumberRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.FieldNumberRule"
-          message="FieldNumber is {0}.">
+          message="{0}">
         <description>
             FieldNumberRule
         </description>
@@ -47,7 +57,7 @@
     <rule name="MethodLengthRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.MethodLengthRule"
-          message="Method Length is {0}.">
+          message="{0}">
         <description>
             MethodLengthRule
         </description>
@@ -57,7 +67,7 @@
     <rule name="ImportNumberRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.ImportNumberRule"
-          message="Imports {0}.">
+          message="{0}">
         <description>
             ImportNumberRule
         </description>
@@ -67,7 +77,7 @@
     <rule name="ParameterNumberRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.ParameterNumberRule"
-          message="Parameters  {0}.">
+          message="{0}">
         <description>
             ParameterNumberRule
         </description>
@@ -79,7 +89,7 @@
     <rule name="InterfaceInsteadClassRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.InterfaceInsteadClassRule"
-          message="Class can be replaced with Interface  {0}.">
+          message="{0}">
         <description>
             Если родительский класс можно заменить интерфейсом, возвращает 1, иначе 0;
         </description>
@@ -89,7 +99,7 @@
     <rule name="IfNumberRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.IfNumberRule"
-          message="IfElse number is {0}.">
+          message="{0}">
         <description>
             Количество if конструкций if-else
         </description>
@@ -101,7 +111,7 @@
     <rule name="InstanceOfNumberRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.InstanceOfNumberRule"
-          message="InstanceOf is {0}.">
+          message="{0}">
         <description>
             Выдает количество вызовов InstanceOf
         </description>
@@ -111,9 +121,9 @@
     <rule name="EmptyMethodRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.EmptyMethodRule"
-          message="Is this method empty {0}.">
+          message="{0}">
         <description>
-            Выдает количество вызовов InstanceOf
+            Выдает количество пустых методов
         </description>
         <priority>1</priority>
     </rule>
@@ -121,7 +131,7 @@
     <rule name="UnexpectedExceptionRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.UnexpectedExceptionRule"
-          message="UnexpectedException number is {0}.">
+          message="{0}">
         <description>
             Выдает 1, если класс содержит Exception, которого нет в родительском
         </description>
@@ -133,7 +143,7 @@
     <rule name="JustReturnMethodRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.JustReturnMethodRule"
-          message="JustReturn is {0}.">
+          message="{0}">
         <description>
             JustReturnMethodRule возвращает 1, если в методе только return, 0 - если всё хорошо
         </description>
@@ -143,7 +153,7 @@
     <rule name="MethodsClusterNumberRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.MethodsClusterNumberRule"
-          message="JustReturn is {0}.">
+          message="{0}">
         <description>
             Возвращает количество кластеров, на которые возможно разделить используемые методы
         </description>
@@ -155,7 +165,7 @@
     <rule name="ObjectInsideObjectRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.ObjectInsideObjectRule"
-          message="Problem is {0}.">
+          message="{0}">
         <description>
             Выдает количество "плохих" объявлений переменных
         </description>
@@ -165,7 +175,7 @@
     <rule name="DependencyNumberRule"
           language="java"
           class="net.sourceforge.pmd.examples.java.rules.DependencyNumberRule"
-          message="Dependency number is {0}.">
+          message="{0}">
         <description>
             Выдает количество "плохих" объявлений переменных
         </description>
